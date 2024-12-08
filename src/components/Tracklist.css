@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.tracklist {
+  width: 80%;
+  height: auto;
+  font-family: Poppins;
+}
+
+.tracklist .txt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.tracktable {
+  height: auto;
+  width: 100%;
+  font-size: small;
+}
+
+.tracktable table {
+  border-spacing: 0;
+  width: 100%;
+  text-align: left;
+  table-layout: auto;
+}
+
+.tracktable table tr {
+  width: 100%;
+  cursor: pointer;
+}
+
+.tracktable table tr th {
+  font-weight: 200;
+  font-size: small;
+}
+
+.tracktable table tr td {
+  cursor: pointer;
+}
+
+.tracktable table tr:hover {
+  background-color: #3333335d;
+}
+
+.tracktable table th,
+.tracktable td {
+  padding: 5px;
+  vertical-align: middle;
+  height: 20px;
+}
+
+.track.active {
+  background-color: rgba(82, 0, 0, 1);
+  color: #fff;
+}
+
+.player {
+  height: 290px;
+  width: 80%;
+  background-color: rgba(107, 0, 0, 1);
+  border-radius: 0.6rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: Poppins;
+}
+
+.player h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.player h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 0.4rem;
+}
+
+.player h4 {
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.player .controls {
+  display: inline-flex;
+  gap: 0.3rem;
+  margin-top: 2rem;
+}
+
+.player .controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: black;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.modal button {
+  background-color: rgba(107, 0, 0, 1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
